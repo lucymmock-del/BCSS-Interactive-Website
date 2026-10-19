@@ -38,23 +38,23 @@
   /* Colors*/
   :root {
     --c-white: hsl(0, 0%, 100%);
-    --c-gray-dark: hsl(233, 14%, 25%);
-    --c-purple: hsl(232, 58%, 55%);
-    --c-teal: hsl(180, 100%, 42%);
+    --c-black: hsl(0, 0%, 0%);
+    --c-butter-yellow: hsl(59, 100%, 82%);
+    --c-accent-blue: hsl(214, 100%, 28%);
     --c-transparent: transparent;
-    --c-magenta: hsl(320, 85%, 41%);
+    --c-butter-blue: #00a6ed;
 
     --color-main-bg: var(--c-white);
-    --color-text-dark: var(--c-gray-dark);
+    --color-text-dark: var(--c-black);
     --color-text-light: var(--c-white);
-    --color-header-bg: var(--c-purple);
-    --color-hero-bg: var(--c-purple);
-    --color-button-primary-bg: var(--c-teal);
-    --color-button-primary-text: var(--c-gray-dark);
+    --color-header-bg: var(--c-butter-yellow);
+    --color-hero-bg: var(--c-butter-yellow);
+    --color-button-primary-bg: var(--c-accent-blue);
+    --color-button-primary-text: var(--c-black);
     --color-button-secondary-bg: var(--c-transparent);
     --color-button-secondary-border: var(--c-white);
     --color-button-secondary-text: var(--c-white);
-    --color-fullwidth-bg: var(--c-magenta);
+    --color-fullwidth-bg: var(--c-butter-blue);
   }
 
   *,
@@ -152,12 +152,48 @@
       font-weight: 700;
       letter-spacing: 0.05em;
       text-transform: uppercase;
-      color: var(--color-text-light);
+      color: var(--color-text-dark);
 
       &:hover {
         text-decoration: underline 2px;
         text-underline-offset: 4px;
       }
+    }
+  }
+  .hero {
+    background-color: var(--color-hero-bg);
+
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .count-title {
+      padding-bottom: 10px;
+    }
+
+    .timebox {
+      display: flex;
+      gap: 90px;
+    }
+
+    .time {
+      text-align: center;
+    }
+  }
+  .calendar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .cal-title {
+      padding-bottom: 10px;
     }
   }
 }
