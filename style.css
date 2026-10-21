@@ -196,6 +196,17 @@
       padding-bottom: 10px;
     }
   }
+
+  .accent {
+    background-color: var(--color-fullwidth-bg);
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @layer utility {
